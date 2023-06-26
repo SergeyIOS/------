@@ -1,0 +1,1777 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif
+}
+
+:root {
+    --num_top: 35px;
+}
+
+.body {
+    max-width: 100vw
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.content,
+.text_content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 770px
+}
+
+body {
+    background-color: #fff;
+    width: 100%
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center
+}
+
+.scrolled {
+    background-color: #fff;
+    z-index: 99
+}
+
+header .navbar {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    height: 80px;
+    position: relative
+}
+
+header .nav_logo img {
+    max-width: 180px;
+    max-height: 30px;
+    position: absolute;
+    top: 35%
+}
+
+header .nav_navigation {
+    float: right;
+    list-style: none;
+    margin: 0 auto
+}
+
+header .nav_navigation li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 15px
+}
+
+header .nav_navigation li a:hover {
+    color: #409eef
+}
+
+header .nav_navigation a {
+    position: relative;
+    color: #262626;
+    text-decoration: none;
+    font-size: 13px;
+    font-stretch: ultra-expanded;
+    font-weight: 700
+}
+
+header button {
+    position: absolute;
+    top: 27%;
+    right: 2%;
+    width: 180px;
+    height: 35px;
+    background-color: #bdf300;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #262626
+}
+
+.navbar .nav_menu {
+    position: absolute;
+    right: 2%;
+    top: 33%;
+    display: none
+}
+
+.navbar .nav_menu .hamburger {
+    width: 50px
+}
+
+.main {
+    background-size: auto;
+    padding-top: 100px;
+    padding-bottom: 25vh;
+    text-align: center;
+    background: linear-gradient(0deg, #2fc7f7 0%, #409eef 100%)
+}
+
+.main .text_content {
+    padding-top: 45px;
+    margin-bottom: 50px;
+    color: #fff
+}
+
+.main_title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 40px
+}
+
+.main_subtitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.main .btn {
+    margin-bottom: 60px
+}
+
+.btn {
+    width: 397px;
+    height: 54px;
+    background-color: #bdf300;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #262626
+}
+
+#main_image {
+    margin: 0 auto;
+    border: none;
+    border-radius: 6px
+}
+
+.vnedrenie .text_content {
+    padding-top: 75px;
+    text-align: center
+}
+
+.title {
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    color: #262626;
+    margin-bottom: 15px
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 75px
+}
+
+/* Свойства для сдайлера */
+
+.vnedrenie #main_image {
+    margin-top: -220px
+}
+
+/* #main_image img {
+    width: 1110px;
+    height: 525px
+} */
+
+#main_image {
+    width: 1110px;
+    height: 525px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#main_image .slider {
+    width: 1110px;
+    height: 525px;
+}
+
+#main_image .slider img {
+    width: 1110px;
+    height: 525px;
+}
+
+#main_image .next {
+    position: absolute;
+    right: 0;
+    top: 48%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: rgb(0 0 0 / 30%);
+}
+
+#main_image .next .arrow {
+    margin-left: 8px;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+}
+
+#main_image .prev {
+    position: absolute;
+    left: 0;
+    top: 48%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: rgb(0 0 0 / 30%);
+}
+
+#main_image .prev .arrow {
+    margin-left: 8px;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(-135deg);
+}
+
+/* Конец свойств для слайдера */
+
+
+.vnedrenie .gallary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px
+}
+
+.vnedrenie .gallary .block {
+    width: 255px;
+    height: 322px;
+    text-align: left
+}
+
+.vnedrenie .gallary .block p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #262626;
+    margin-top: 15px
+}
+
+.vnedrenie .gallary .block img {
+    width: 255px;
+    height: 151px;
+    border-radius: 2%
+}
+
+.vnedrenie .btn {
+    margin-bottom: 75px
+}
+
+.stages_vnedr {
+    background: #f5fbff
+}
+
+.stages_vnedr .container {
+    padding-top: 75px;
+    padding-bottom: 30px
+}
+
+.stages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    padding-bottom: 40px
+}
+
+.stages_vnedr .stages .block {
+    width: 255px;
+    height: 223px;
+    text-align: left;
+    margin: 0 15px
+}
+
+.stages .block .transition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 7px
+}
+
+.stages .block .transition p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2fc7f7;
+}
+
+/* 
+.transition .arrow {
+    width: 5px;
+    height: 5px;
+    border-top: 1.5px solid #2fc7f7;
+    border-right: 1.5px solid #2fc7f7;
+    transform: rotate(45deg);
+} */
+
+.stages_vnedr .stages .block .header {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 15px
+}
+
+.stages_vnedr .stages .block .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #262626
+}
+
+.process .container {
+    padding-top: 90px;
+    padding-bottom: 75px
+}
+
+.process .text_content {
+    margin-bottom: 75px
+}
+
+.process .process_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 60px
+}
+
+.process .process_block {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.process .process_block img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 30px;
+}
+
+.process .process_block .header {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.process .process_block .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #262626;
+}
+
+.process .process_block .process_block_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #262626;
+    /* display: none; */
+    opacity: 0;
+}
+
+.process .content p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 15px;
+    margin-bottom: 60px;
+}
+
+.cases .container {
+    padding-top: 70px;
+    padding-bottom: 75px;
+}
+
+.cases .title {
+    margin-bottom: 50px;
+    font-weight: 700px;
+}
+
+.cases .case_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cases .case_blocks .case_block {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.case_block_images {
+    overflow: hidden;
+    width: 44px;
+    height: 35px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.case_block_images .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.case_block_images .img2 {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    transition: .5s;
+}
+
+.case_block:hover .img2 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.case_block:hover .img1 {
+    position: absolute;
+    top: 76px;
+    left: 0;
+}
+
+.cases .case_blocks .case_block img {
+    width: 44px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.cases .case_blocks .case_block .subtitle {
+    font-weight: 500;
+    font-size: 25px;
+    color: #212121;
+}
+
+.cases .under_text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 50px;
+}
+
+.cases .under_text a {
+    color: #3e9cef;
+}
+
+.vozmojnosti .container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.vozmojnosti .text_content {
+    margin-bottom: 80px;
+}
+
+.unite_base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.vozmojnosti .image img {
+    width: 540px;
+    height: 400px;
+}
+
+.vozmojnosti .content {
+    width: 540px;
+    text-align: left;
+}
+
+.vozmojnosti .content .text_title {
+    font-weight: 600;
+    font-size: 27px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.vozmojnosti .unite_base .content p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.vozmojnosti .base_3 .image img {
+    height: 540px;
+}
+
+.vozmojnosti .base_5 .image img {
+    height: 350px;
+}
+
+.vozmojnosti .content p,
+.vozmojnosti .content li {
+    font-weight: 500;
+    font-size: 18px;
+    color: #262626;
+    margin-bottom: 5px
+}
+
+.vozmojnosti .btn {
+    margin-top: 10px;
+}
+
+.mobile_crm {
+    background: #f0faff;
+}
+
+.mobile_crm .text_content {
+    padding-top: 69px;
+}
+
+.mobile_crm .title_text .header {
+    font-weight: 700;
+    font-size: 40px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.mobile_crm .title_text .subtitle {
+    font-weight: 500;
+    font-size: 22px;
+    color: #262626;
+}
+
+.mobile_crm .information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.mobile_image img {
+    width: 445px;
+    height: 470px;
+}
+
+.tabs {
+    width: 630px;
+}
+
+.tabs .tab {
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.tabs .tab label {
+    padding-left: 0;
+}
+
+.tab hr {
+    border-color: #a9cbe9;
+    outline: none;
+}
+
+.tab:hover hr {
+    border-color: transparent;
+}
+
+.tab input,
+.hidden_text {
+    display: none;
+}
+
+.tab {
+    background: 0 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.tab_title {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 600;
+    font-size: 23px;
+    color: #262626;
+}
+
+.arrow {
+    color: #4f9ce0;
+    transition: .2s;
+    display: block;
+    margin-left: 10px;
+}
+
+.hidden_text {
+    padding: 10px 15px 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #262626;
+}
+
+.tab :checked+label>.arrow {
+    transform: rotate(90deg)
+}
+
+.tab :checked~.hidden_text {
+    display: block
+}
+
+.preimushestva .text_content .title {
+    padding-top: 90px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #262626
+}
+
+.preimushestva_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px
+}
+
+.preimushestva_list .list_block {
+    width: 350px;
+    height: 311px;
+    border-radius: 5%
+}
+
+.text_in_block {
+    margin: 40px 30px;
+    text-align: left
+}
+
+.text_in_block .block_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 20px
+}
+
+.text_in_block p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #262626;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.block_1 {
+    background-color: #f8fde5
+}
+
+.block_2 {
+    background-color: #f5fbff
+}
+
+.block_3 {
+    background-color: #defefb
+}
+
+.bitrix {
+    background: linear-gradient(90deg, #409eef 0%, #2fc7f7 100%)
+}
+
+.bitrix .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.bitrix .container h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.bitrix .container p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.bitrix .text_content {
+    width: 525px;
+    text-align: left;
+    margin-right: 0px;
+    margin-left: 0;
+}
+
+.bitrix .image {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.bitrix .image .main_image {
+    width: 250px;
+    height: 250px;
+}
+
+.bitrix .image .image_1 {
+    position: absolute;
+    top: 35px;
+    right: -20px;
+    width: 110px;
+    height: 110px;
+}
+
+.bitrix .image .image_2 {
+    position: absolute;
+    bottom: 50px;
+    right: -10px;
+    width: 83px;
+    height: 115px;
+}
+
+.bitrix .image .image_3 {
+    position: absolute;
+    bottom: -30px;
+    left: 90px;
+    width: 140px;
+    height: 95px;
+}
+
+.bitrix .image .image_4 {
+    position: absolute;
+    top: -20px;
+    left: 110px;
+    width: 80px;
+    height: 95px;
+}
+
+.bitrix .image .image_5 {
+    position: absolute;
+    top: 190px;
+    left: -40px;
+    width: 95px;
+    height: 115px;
+}
+
+@keyframes rotates {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bitrix .image {
+    animation: rotates 10s infinite linear;
+}
+
+@keyframes mini-rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.lst {
+    animation: mini-rot 10s infinite linear;
+}
+
+
+.application .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.application .text_content {
+    padding-top: 40px
+}
+
+.application .text_content {
+    width: 700px;
+    margin-bottom: 15px
+}
+
+.application .text_content h2 {
+    font-weight: 900;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 9px
+}
+
+.application .text_content p {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px
+}
+
+.application hr {
+    background-color: #c7c7c7;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px
+}
+
+.application .block_input {
+    width: 638px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.application .input_block {
+    position: relative;
+    width: 100%
+}
+
+.application .block_input .input_block input {
+    width: 97%;
+    height: 52px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid #e4e3e3;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f5f4f4;
+    padding-left: 10px;
+    cursor: text
+}
+
+.application .input_block input:focus {
+    background-color: transparent
+}
+
+.application .input_block label {
+    position: absolute;
+    color: #9c9c9c;
+    font-size: 15px;
+    font-weight: 500;
+    top: 17px;
+    left: 11px
+}
+
+.application .input_block input:focus~label {
+    top: 5px;
+    font-size: 12px
+}
+
+.application span {
+    color: #f14b4b
+}
+
+.application .checkbox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.application .block_input .btn_input {
+    width: 100%;
+    height: 50px;
+    background-color: #00b0f0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px
+}
+
+.application .block_input .checkbox p {
+    font-size: 11px;
+    color: #707070;
+    line-height: 1;
+    cursor: pointer;
+    text-align: left
+}
+
+.application .block_input .checkbox input {
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer
+}
+
+footer {
+    padding: 40px 0 25px;
+    background-color: #262626;
+    text-align: center
+}
+
+footer p {
+    font-size: 14px;
+    color: #919191
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .btn {
+        width: 340px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    #main_image {
+        width: 930px;
+        height: 440px;
+    }
+
+    #main_image .slider {
+        width: 930px;
+        height: 440px;
+    }
+
+    #main_image .slider img {
+        width: 930px;
+        height: 440px;
+    }
+
+    .vnedrenie .gallary .block {
+        width: 210px;
+    }
+
+    .vnedrenie .gallary .block img {
+        width: 210px;
+        height: 125px;
+    }
+
+    .stages_vnedr .stages .block {
+        width: 210px;
+    }
+
+    .process_blocks .process_block {
+        width: 290px;
+        height: 340px;
+    }
+
+    .case_blocks .case_block {
+        width: 320px;
+    }
+
+    .unite_base .image img {
+        width: 450px;
+        height: 333px;
+    }
+
+    .vozmojnosti .base_3 .image img {
+        height: 450px;
+    }
+
+    .vozmojnosti .base_5 .image img {
+        height: 291px;
+    }
+
+    .unite_base .content {
+        width: 450px;
+    }
+
+    .mobile_crm .mobile_image img {
+        width: 370px;
+        height: 390px;
+    }
+
+    .mobile_crm .tabs {
+        max-width: 500px;
+    }
+
+    .preimushestva_list .list_block {
+        width: 290px;
+        height: 386px;
+    }
+
+    .bitrix .container {
+        gap: 90px;
+    }
+
+    .bitrix .text_content {
+        width: 440px;
+    }
+
+    .bitrix .image {
+        width: 350px;
+        height: 350px;
+        margin-right: 0px;
+    }
+
+    .bitrix .image .main_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bitrix .image .image_1 {
+        top: 35px;
+        right: -10px;
+        width: 85px;
+        height: 90px;
+    }
+
+    .bitrix .image .image_2 {
+        bottom: 30px;
+        right: 0px;
+        width: 63px;
+        height: 90px;
+    }
+
+    .bitrix .image .image_3 {
+        bottom: -20px;
+        left: 70px;
+        width: 110px;
+        height: 75px;
+    }
+
+    .bitrix .image .image_4 {
+        top: -20px;
+        left: 100px;
+        width: 60px;
+        height: 75px;
+    }
+
+    .bitrix .image .image_5 {
+        top: 130px;
+        left: -30px;
+        width: 75px;
+        height: 95px;
+    }
+}
+
+@media (max-width:991px) {
+    .container {
+        max-width: 770px
+    }
+
+    .nav_button {
+        display: none
+    }
+
+    .nav_navigation {
+        position: fixed;
+        top: -180px;
+        background-color: #fff;
+        width: 100vw;
+        height: 200px;
+        left: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column
+    }
+
+    .nav_navigation li {
+        padding-left: 30px
+    }
+
+    .navbar .nav_menu {
+        display: inline
+    }
+
+    #main_image {
+        width: 690px;
+        height: 327px
+    }
+
+    #main_image .slider {
+        width: 690px;
+        height: 327px
+    }
+
+    #main_image .slider img {
+        width: 690px;
+        height: 327px
+    }
+
+    .vnedrenie .gallary .block {
+        width: 180px
+    }
+
+    .vnedrenie .gallary .block img {
+        width: 150px;
+        height: 89px
+    }
+
+    .stages_vnedr .stages .block {
+        width: 150px
+    }
+
+    .process_blocks .process_block {
+        width: 180px;
+        height: 423px
+    }
+
+    .unite_base .image img {
+        width: 330px;
+        height: 244px
+    }
+
+    .vozmojnosti .base_3 .image img {
+        height: 330px
+    }
+
+    .vozmojnosti .base_5 .image img {
+        height: 213px
+    }
+
+    .unite_base .content {
+        width: 330px
+    }
+
+    .mobile_crm .mobile_image img {
+        width: 270px;
+        height: 285px
+    }
+
+    .mobile_crm .tabs {
+        max-width: 370px
+    }
+
+    .preimushestva_list .list_block {
+        width: 690px;
+        height: 236px
+    }
+
+    .preimushestva_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px
+    }
+
+    .bitrix .text_content {
+        width: 320px
+    }
+
+    .bitrix .image {
+        width: 250px;
+        height: 250px;
+        /* border: 2px solid red; */
+        margin-right: 0px;
+    }
+
+    .bitrix .image .main_image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bitrix .image .image_1 {
+        top: 20px;
+        right: -5px;
+        width: 65px;
+        height: 70px;
+    }
+
+    .bitrix .image .image_2 {
+        bottom: 25px;
+        right: 0px;
+        width: 50px;
+        height: 70px;
+    }
+
+    .bitrix .image .image_3 {
+        bottom: -20px;
+        left: 55px;
+        width: 85px;
+        height: 62px;
+    }
+
+    .bitrix .image .image_4 {
+        top: -10px;
+        left: 60px;
+        width: 48px;
+        height: 58px;
+    }
+
+    .bitrix .image .image_5 {
+        top: 100px;
+        left: -20px;
+        width: 60px;
+        height: 75px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: 700px
+    }
+
+    .btn {
+        width: 270px;
+        height: 40px;
+        font-size: 12px
+    }
+
+    .main .text_content,
+    .vnedrenie .text_content,
+    .stages_vnedr .text_content,
+    .process .text_content,
+    .cases .text_content,
+    .vozmojnosti .text_content,
+    .mobile_crm .text_content,
+    .preimushestva .text_content,
+    .application .text_content {
+        max-width: 93%
+    }
+
+    .main .text_content h1,
+    .vnedrenie .text_content h2,
+    .stages_vnedr .text_content h2,
+    .process .text_content h2,
+    .cases .text_content h2,
+    .vozmojnosti .text_content h2,
+    .mobile_crm .text_content h2,
+    .preimushestva .text_content .title,
+    .application .text_content h2 {
+        font-size: 34px
+    }
+
+    .cases .case_blocks .case_block .subtitle {
+        font-size: 20px
+    }
+
+    .main .text_content p,
+    .vnedrenie .text_content .subtitle,
+    .cases .under_text,
+    .mobile_crm .text_content .subtitle,
+    .mobile_crm .tabs .tab .tab_title,
+    .mobile_crm .tabs .tab .hidden_text,
+    .application .text_content p,
+    .bitrix .container p {
+        font-size: 16px
+    }
+
+    .stages_vnedr .stages .block .header,
+    .process .process_block .header,
+    .stages .block .transition p,
+    .vozmojnosti .unite_base .content p,
+    .vozmojnosti .unite_base .content li,
+    .text_in_block .block_title {
+        font-size: 17px
+    }
+
+    .vnedrenie .gallary .block p,
+    .stages_vnedr .stages .block .text,
+    .process .process_block .text,
+    .text_in_block p {
+        font-size: 15px
+    }
+
+    .vozmojnosti .content .text_title {
+        font-size: 23px
+    }
+
+    .bitrix .container h2 {
+        font-size: 27px
+    }
+
+    #main_image {
+        width: 510px;
+        height: 241px
+    }
+
+    #main_image .slider {
+        width: 510px;
+        height: 241px
+    }
+
+    #main_image .slider img {
+        width: 510px;
+        height: 241px
+    }
+
+    .vnedrenie .gallary {
+        display: flex;
+        justify-content: center
+    }
+
+    .vnedrenie .gallary .block {
+        width: 520px;
+        height: 400px
+    }
+
+    .vnedrenie .gallary .block img {
+        width: 510px;
+        height: 302px;
+        border-radius: 3px;
+        box-shadow: 1px 5px 10px 1px #e0e0e0
+    }
+
+    .stages_vnedr .stages .block {
+        margin: 0 auto;
+        width: 540px;
+        margin-bottom: -30px
+    }
+
+    .process_blocks .process_block {
+        width: 510px;
+        margin: 0 auto;
+        margin-bottom: -140px
+    }
+
+    .unite_base .image img {
+        width: 510px;
+        height: 377px
+    }
+
+    .case_block {
+        margin: 0 auto
+    }
+
+    .vozmojnosti .base_3 .image img {
+        height: 510px
+    }
+
+    .vozmojnosti .base_5 .image img {
+        height: 330px
+    }
+
+    .vozmojnosti .unite_base {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px
+    }
+
+    .vozmojnosti .image {
+        order: 1
+    }
+
+    .unite_base .content {
+        width: 510px
+    }
+
+    .mobile_crm .mobile_image img {
+        width: 450px;
+        height: 478px
+    }
+
+    .mobile_crm .tabs {
+        width: 500px
+    }
+
+    .preimushestva_list .list_block {
+        width: 510px;
+        height: 236px
+    }
+
+    .preimushestva_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px
+    }
+
+    .bitrix .container,
+    .mobile_crm .information {
+        display: flex;
+        justify-content: center;
+        gap: 30px
+    }
+
+    .bitrix .text_content {
+        width: 510px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .application hr {
+        width: 100%
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        max-width: 665px
+    }
+
+    #main_image {
+        width: 85%;
+        height: 45%;
+    }
+
+    #main_image .slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    #main_image .slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .vnedrenie .gallary .block {
+        width: 80%;
+    }
+
+    .vnedrenie .gallary .block img {
+        width: 100%;
+        height: 77%;
+    }
+
+    .stages_vnedr .stages .block {
+        width: 80%;
+    }
+
+    .process_blocks .process_block {
+        width: 60%;
+    }
+
+    .case_blocks .case_block {
+        width: 50%;
+    }
+
+    .unite_base .image img {
+        width: 75%;
+        height: 59%;
+    }
+
+    .vozmojnosti .base_3 .image img {
+        height: 75%;
+    }
+
+    .vozmojnosti .base_5 .image img {
+        height: 30%;
+    }
+
+    .unite_base .content {
+        width: 75%px;
+    }
+
+    .mobile_crm .mobile_image img {
+        width: 60%;
+        height: 100%;
+    }
+
+    .mobile_crm .tabs {
+        width: 70%;
+    }
+
+    .preimushestva_list .list_block {
+        width: 80%;
+        height: 326px;
+    }
+
+    .bitrix .text_content {
+        width: 80%;
+    }
+
+    .bitrix .image img {
+        width: 80%;
+        height: 70%;
+    }
+
+    .application hr {
+        width: 80%;
+    }
+
+    .application .block_input {
+        width: 80%;
+    }
+}
+
+@media (max-width:665px) {
+    .container {
+        width: 80vw;
+    }
+
+    .main {
+        padding-bottom: 5vh;
+    }
+
+    .vnedrenie .gallary .block img {
+        width: 100%;
+        height: 40vw;
+    }
+
+    #main_image {
+        display: none;
+    }
+
+    .btn {
+        width: 230px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .unite_base .content {
+        width: 75%;
+    }
+
+    .main .text_content h1,
+    .vnedrenie .text_content h2,
+    .stages_vnedr .text_content h2,
+    .process .text_content h2,
+    .cases .text_content h2,
+    .vozmojnosti .text_content h2,
+    .mobile_crm .text_content h2,
+    .preimushestva .text_content .title,
+    .application .text_content h2 {
+        font-size: 26px;
+    }
+
+    .cases .case_blocks .case_block .subtitle {
+        font-size: 16px;
+    }
+
+    .main .text_content p,
+    .vnedrenie .text_content .subtitle,
+    .cases .under_text,
+    .mobile_crm .text_content .subtitle,
+    .mobile_crm .tabs .tab .tab_title,
+    .mobile_crm .tabs .tab .hidden_text,
+    .application .text_content p,
+    .bitrix .container p {
+        font-size: 13px;
+    }
+
+    .stages_vnedr .stages .block .header,
+    .process .process_block .header,
+    .stages .block .transition p,
+    .vozmojnosti .unite_base .content p,
+    .vozmojnosti .unite_base .content li,
+    .text_in_block .block_title {
+        font-size: 14px;
+    }
+
+    .vnedrenie .gallary .block p,
+    .stages_vnedr .stages .block .text,
+    .process .process_block .text,
+    .text_in_block p {
+        font-size: 14px;
+    }
+
+    .vnedrenie .gallary .block {
+        max-height: 400px;
+    }
+
+    .process .process_block img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .vozmojnosti .content .text_title {
+        font-size: 17px;
+    }
+
+    .bitrix .container h2 {
+        font-size: 21px;
+    }
+
+    .application .block_input .input_block input {
+        width: 97%;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .application .input_block label {
+        font-size: 12px;
+    }
+
+    .application .input_block input:focus~label {
+        font-size: 9px;
+    }
+
+    .bitrix .image {
+        width: 200px;
+        height: 200px;
+        margin-right: 0px;
+    }
+
+    .bitrix .image .main_image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bitrix .image .image_1 {
+        top: -15px;
+        right: 0px;
+        width: 65px;
+        height: 70px;
+    }
+
+    .bitrix .image .image_2 {
+        bottom: 25px;
+        right: -20px;
+        width: 50px;
+        height: 70px;
+    }
+
+    .bitrix .image .image_3 {
+        bottom: -40px;
+        left: 55px;
+        width: 85px;
+        height: 62px;
+    }
+
+    .bitrix .image .image_4 {
+        top: -15px;
+        left: 20px;
+        width: 48px;
+        height: 58px;
+    }
+
+    .bitrix .image .image_5 {
+        top: 95px;
+        left: -30px;
+        width: 60px;
+        height: 75px;
+    }
+}
+
+@media (max-width:370px) {
+    .btn {
+        width: 180px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    header .nav_logo img {
+        max-width: 140px;
+        max-height: 25px;
+    }
+
+    .main .text_content h1,
+    .vnedrenie .text_content h2,
+    .stages_vnedr .text_content h2,
+    .process .text_content h2,
+    .cases .text_content h2,
+    .vozmojnosti .text_content h2,
+    .mobile_crm .text_content h2,
+    .preimushestva .text_content .title,
+    .application .text_content h2 {
+        font-size: 20px;
+    }
+
+    .preimushestva_list .list_block {
+        height: 350px;
+    }
+
+    .cases .case_blocks .case_block .subtitle {
+        font-size: 13px;
+    }
+
+    .main .text_content p,
+    .vnedrenie .text_content .subtitle,
+    .cases .under_text,
+    .mobile_crm .text_content .subtitle,
+    .mobile_crm .tabs .tab .tab_title,
+    .mobile_crm .tabs .tab .hidden_text,
+    .application .text_content p,
+    .bitrix .container p {
+        font-size: 13px;
+    }
+
+    .stages_vnedr .stages .block .header,
+    .process .process_block .header,
+    .stages .block .transition p,
+    .vozmojnosti .unite_base .content p,
+    .vozmojnosti .unite_base .content li,
+    .text_in_block .block_title {
+        font-size: 12px;
+    }
+
+    .vnedrenie .gallary .block p,
+    .stages_vnedr .stages .block .text,
+    .process .process_block .text,
+    .text_in_block p {
+        font-size: 12px;
+    }
+
+    .vnedrenie .gallary .block {
+        max-height: 300px;
+    }
+
+    .vozmojnosti .content .text_title {
+        font-size: 15px;
+    }
+
+    .bitrix .container h2 {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .application .block_input .checkbox p {
+        font-size: 8px;
+    }
+}
